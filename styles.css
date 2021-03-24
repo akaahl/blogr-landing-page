@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
   font-size: 16px;
   font-family: "Overpass", sans-serif;
+  overflow-x: hidden;
 }
 
 .main-container header {
@@ -73,11 +74,50 @@ body {
 .main-container header .navbar .left-side ul li {
   display: inline-block;
   margin: 0 10px;
+  position: relative;
 }
 
-.main-container header .navbar .left-side ul li a {
+.main-container header .navbar .left-side ul li > a {
   text-decoration: none;
   color: #fff;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.main-container header .navbar .left-side ul li > a:hover img {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease-in;
+}
+
+.main-container header .navbar .left-side ul li ul {
+  list-style: none;
+  position: absolute;
+  left: -80px;
+  top: 40px;
+  background: #fff;
+  padding: 1rem 4.5rem 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 20px 25px rgba(0,0,0,0.3);
+  z-index: 11;
+  display: none;
+}
+
+.main-container header .navbar .left-side ul li a:hover ~ ul {
+  display: block;
+}
+
+.main-container header .navbar .left-side ul li ul li {
+  display: block;
+  margin: 15px 0;
+}
+
+.main-container header .navbar .left-side ul li ul li a {
+  color: var(--very-dark-grayish-blue-body);
+  font-weight: 500;
+}
+
+.main-container header .navbar .left-side ul li ul li a:hover {
+  font-weight: 600;
 }
 
 .main-container header .navbar .right-side a {
@@ -94,13 +134,14 @@ body {
   color: var(--light-red-cta-text);
   font-weight: 600;
   margin-left: 2rem;
+  cursor: pointer;
 }
 
 .main-container header .hero-content {
   position: relative;
   top: 4rem;
   text-align: center;
-  z-index: 10;
+  z-index: 5;
 }
 
 .main-container header .hero-content h1 {
@@ -113,7 +154,7 @@ body {
   color: #fff;
   opacity: 0.7;
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .main-container header .hero-content .hero-buttons {
@@ -126,16 +167,22 @@ body {
 .main-container header .hero-content .hero-buttons .first-btn,
 .main-container header .hero-content .hero-buttons .second-btn {
   margin: 0 8px;
+  cursor: pointer;
 }
 
 .main-container header .hero-content .hero-buttons .first-btn {
   border: none;
   outline: none;
   border-radius: 4rem;
-  padding: 1rem;
+  padding: 0.8rem 1.3rem;
   background: #fff;
   color: var(--light-red-cta-text);
   font-weight: 600;
+}
+
+.main-container header .hero-content .hero-buttons .first-btn:hover {
+  color: #fff;
+  background: var(--very-light-red-cta-hover);
 }
 
 .main-container header .hero-content .hero-buttons .second-btn {
@@ -144,6 +191,191 @@ body {
   background: none;
   color: #fff;
   font-weight: 600;
-  padding: 1rem;
+  padding: 0.8rem 1.3rem;
   border-radius: 4rem;
 }
+
+.main-container header .hero-content .hero-buttons .second-btn:hover {
+  background: #fff;
+  color: var(--light-red-cta-text);
+}
+
+body button:active {
+  transform: scale(0.95);
+}
+
+.main-container .content-1 {
+  display: block;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.main-container .content-1 img {
+  position: absolute;
+  right: -20%;
+}
+
+.main-container .content-1 h2,
+.main-container .content-1 h3 {
+  color: var(--very-dark-blue-heading);
+}
+
+.main-container .content-1 p {
+  color: var(--very-dark-grayish-blue-body);
+}
+
+.main-container .content-1 h2 {
+  text-align: center;
+  position: relative;
+  top: 8rem;
+  font-size: 1.8rem;
+}
+
+.main-container .content-1 .inner-content-1,
+.main-container .content-1 .inner-content-2 {
+  width: 40%;
+  position: relative;
+  top: 15rem;
+  left: 5.5rem;
+}
+
+.main-container .content-1 .inner-content-1 h3,
+.main-container .content-1 .inner-content-2 h3 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.main-container .content-1 .inner-content-1 p,
+.main-container .content-1 .inner-content-2 p {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.main-container .content-1 .inner-content-2 {
+  margin-top: 4rem;
+}
+
+.main-container .content-2 {
+  z-index: 10;
+  margin-top: 35%;
+  position: relative;
+  border-top-right-radius: 7rem;
+  border-bottom-left-radius: 7rem;
+  background: linear-gradient(45deg, var(--gradient-very-dark-gray-blue) 20%, var(--gradient-very-dark-desaturated-blue));
+  height: 60vh;
+  overflow: hidden;
+}
+
+.main-container .content-2 .circle-img {
+  z-index: -5;
+  position: absolute;
+  top: -125%;
+  left: -15.7%;
+}
+
+.main-container .content-2 h2, .main-container .content-2 p {
+  position: absolute;
+}
+
+.main-container .content-2 h2 {
+  color: #fff;
+  right: 14.3%;
+  top: 30%;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.main-container .content-2 p {
+  width: 30%;
+  color: var(--grayish-blue-footer-text);
+  right: 14.3%;
+  top: 45%;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.main-container .content-2-img {
+  position: relative;
+  z-index: 10;
+  margin-top: -34.5%;
+  margin-left: 10%;
+}
+
+.main-container .content-3 {
+  position: relative;
+}
+
+.main-container .content-3 img {
+  position: relative;
+  left: -21%;
+}
+
+.main-container .content-3 .inner-content-1,
+.main-container .content-3 .inner-content-2 {
+  position: absolute;
+}
+
+.main-container .content-3 .inner-content-1 {
+  top: 22%;
+  left: 50%;
+}
+
+.main-container .content-3 .inner-content-2 {
+  top: 57%;
+  left: 50%;
+}
+
+.main-container .content-3 h3 {
+  font-size: 1.5rem;
+  color: var(--very-dark-blue-heading);
+}
+
+.main-container .content-3 p {
+  width: 70%;
+  margin-top: 1.7rem;
+  line-height: 2rem;
+  color: var(--very-dark-grayish-blue-body);
+}
+
+footer {
+  height: 50vh;
+  background: var(--very-dark-black-blue-footer-background);
+  border-top-right-radius: 6rem;
+  padding: 4rem 20rem 4rem 8rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .footer-nav {
+  width: 70%;
+}
+
+footer .footer-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .footer-nav ul li {
+  color: #fff;
+  font-weight: 600;
+}
+
+footer .footer-nav ul li ul {
+  margin-top:  1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-nav ul li ul li {
+  margin: 10px 0;
+}
+
+footer .footer-nav ul li ul li a {
+  text-decoration: none;
+  color: var(--grayish-blue-footer-text);
+  font-weight: 400;
+}
+
