@@ -1,5 +1,3 @@
-const innerLinks = document.querySelectorAll('.inner-links');
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const closeBtn = document.getElementById('close-btn');
 
-innerLinks.forEach(link => {
-    const linkParent = link
-})
