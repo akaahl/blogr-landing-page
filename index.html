@@ -4,20 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
     <title>Blogr Landing Page</title>
   </head>
   <body>
     <main class="main-container">
       <header>
-        <img src="images/bg-pattern-intro.svg" alt="intro-pattern" class="pattern-intro"/>
+        <img
+          src="images/bg-pattern-intro.svg"
+          alt="intro-pattern"
+          class="pattern-intro"
+        />
         <nav class="navbar">
           <div class="left-side">
             <img src="images/logo.svg" alt="logo" />
-            <ul>
+            <ul class="desktop-navbar">
               <li>
-                <a href="#">Product <img src="images/icon-arrow-light.svg" alt="arrow-icon"/></a>
+                <a href="#" class="desktop-a-links"
+                  >Product
+                  <img src="images/icon-arrow-light.svg" alt="arrow-icon"
+                /></a>
                 <ul class="inner-links">
                   <li><a href="#">Overview</a></li>
                   <li><a href="#">Pricing</a></li>
@@ -27,8 +37,11 @@
                 </ul>
               </li>
               <li>
-                <a href="#">Company <img src="images/icon-arrow-light.svg" alt="arrow-icon"/></a>
-                <ul lass="inner-links">
+                <a href="#" class="desktop-a-links"
+                  >Company
+                  <img src="images/icon-arrow-light.svg" alt="arrow-icon"
+                /></a>
+                <ul class="inner-links">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Team</a></li>
                   <li><a href="#">Blog</a></li>
@@ -36,51 +49,33 @@
                 </ul>
               </li>
               <li>
-                <a href="#">Connect <img src="images/icon-arrow-light.svg" alt="arrow-icon"/></a>
-                <ul lass="inner-links">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                <a href="#" class="desktop-a-links"
+                  >Connect
+                  <img src="images/icon-arrow-light.svg" alt="arrow-icon"
+                /></a>
+                <ul class="inner-links">
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">LinkedIn</a></li>
                 </ul>
               </li>
             </ul>
-
-            
           </div>
           <div class="right-side">
-            <ul class="mobile-navbar" id="mobile-navbar">
-              <li>
-                <a href="#">Product <img src="images/icon-arrow-light.svg" alt="arrow-icon"/></a>
-                <ul class="inner-links">
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Marketplace</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Integration</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Company <img src="images/icon-arrow-light.svg" alt="arrow-icon"/></a>
-                <ul lass="inner-links">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Careers</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Connect <img src="images/icon-arrow-light.svg" alt="arrow-icon"/></a>
-                <ul lass="inner-links">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-              </li>
-            </ul>
-            <a href="#">Login</a>
+            <a href="#" class="desktop-login-button">Login</a>
             <button class="button">Sign Up</button>
-            <img src="images/icon-hamburger.svg" alt="hamburger-icon" id="hamburger-btn" class="hamburger-btn">
-            <img src="images/icon-close.svg" alt="close-hamburger-btn" id="close-btn" class="close-btn">
+            <img
+              src="images/icon-hamburger.svg"
+              alt="hamburger-icon"
+              id="hamburger-btn"
+              class="hamburger-btn"
+            />
+            <img
+              src="images/icon-close.svg"
+              alt="close-hamburger-btn"
+              id="close-btn"
+              class="close-btn"
+            />
           </div>
         </nav>
 
@@ -94,47 +89,132 @@
         </div>
       </header>
 
-      <section class="content-1">
-          <h2>Designed for the future</h2>
-          <img src="images/illustration-editor-desktop.svg" alt="content-img">
-          <img src="images/illustration-editor-mobile.svg" alt="content-img-mobile" class="mobile-illustration-img">
-          <div class="inner-content-1">
-            <h3>Introducing an extensible editor</h3>
-            <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
-          </div>
+      <div class="mobile-navbar-container" id="mobile-navbar-container">
+        <ul class="mobile-navbar">
+          <li>
+            <a href="#" class="mobile-a-links"
+              >Product <img src="images/icon-arrow-light.svg" alt="arrow-icon"
+            /></a>
+            <ul class="inner-links">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integration</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="mobile-a-links"
+              >Company <img src="images/icon-arrow-light.svg" alt="arrow-icon"
+            /></a>
+            <ul class="inner-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="mobile-a-links"
+              >Connect <img src="images/icon-arrow-light.svg" alt="arrow-icon"
+            /></a>
+            <ul class="inner-links">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="#">Login</a>
+          <button>Sign Up</button>
+        </div>
+      </div>
 
-          <div class="inner-content-2">
-            <h3>Robust content management</h3>
-            <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format or flow. With this functionality, you're in full control.</p>
-          </div>
+      <section class="content-1">
+        <h2>Designed for the future</h2>
+        <img src="images/illustration-editor-desktop.svg" alt="content-img" />
+        <img
+          src="images/illustration-editor-mobile.svg"
+          alt="content-img-mobile"
+          class="mobile-illustration-img"
+        />
+        <div class="inner-content-1">
+          <h3>Introducing an extensible editor</h3>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide
+            easy ways to add functionality or change the looks of a blog.
+          </p>
+        </div>
+
+        <div class="inner-content-2">
+          <h3>Robust content management</h3>
+          <p>
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format or flow. With this functionality,
+            you're in full control.
+          </p>
+        </div>
       </section>
 
       <section class="content-2">
-        <img src="images/bg-pattern-circles.svg" alt="circle-img" class="circle-img">
+        <img
+          src="images/bg-pattern-circles.svg"
+          alt="circle-img"
+          class="circle-img"
+        />
         <h2>State of the Art Infrastructure</h2>
-        <p>With reliability and speed in mind, worldwide datacenters provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        <p>
+          With reliability and speed in mind, worldwide datacenters provide the
+          backbone for ultra-fast connectivity. This ensures your site will load
+          instantly, no matter where your readers are, keeping your site
+          competitive.
+        </p>
       </section>
 
       <div class="content-2-img">
-        <img src="images/illustration-phones.svg" alt="phone-img" class="phone-img">
+        <img
+          src="images/illustration-phones.svg"
+          alt="phone-img"
+          class="phone-img"
+        />
       </div>
 
       <section class="content-3">
-        <img src="images/illustration-laptop-desktop.svg" alt="laptop-img">
-        <img src="images/illustration-laptop-mobile.svg" alt="mobile-laptop-illustration" class="mobile-laptop-illustration">
+        <img src="images/illustration-laptop-desktop.svg" alt="laptop-img" />
+        <img
+          src="images/illustration-laptop-mobile.svg"
+          alt="mobile-laptop-illustration"
+          class="mobile-laptop-illustration"
+        />
         <div class="inner-content-1">
           <h3>Free, open, simple</h3>
-          <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party-commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party-commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
         </div>
         <div class="inner-content-2">
           <h3>Powerful tooling</h3>
-          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
         </div>
       </section>
     </main>
 
     <footer>
-      <img src="images/logo.svg" alt="logo-img">
+      <img src="images/logo.svg" alt="logo-img" />
       <nav class="footer-nav">
         <ul>
           <li>
